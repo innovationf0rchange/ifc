@@ -103,16 +103,17 @@
     }
     .performer-card:hover { border-color: var(--gold); transform: translateY(-4px); }
     .performer-avatar {
-      width: 72px; height: 72px; border-radius: 50%; margin: 0 auto 16px;
-      display: flex; align-items: center; justify-content: center;
-      font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #0a0806;
-      background: linear-gradient(135deg, var(--gold), var(--gold-light));
-      overflow: hidden;
-    }
+  width: 100%; height: 180px; border-radius: 0; margin: 0 0 16px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #0a0806;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  overflow: hidden; position: relative;
+}
     .performer-avatar img { width: 100%; height: 100%; object-fit: cover; }
-    .performer-card h3 { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--text); margin-bottom: 6px; }
+    .performer-card h3 { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--text); margin-bottom: 6px; padding: 0 20px; }
+.performer-art { font-size: .72rem; color: var(--text); font-weight: 600; letter-spacing: .06em; text-transform: uppercase; display: inline-block; position: absolute; bottom: 10px; left: 10px; background: rgba(10,8,6,.75); padding: 4px 12px; border-radius: 20px; z-index: 2; }
     .performer-art { font-size: .78rem; color: var(--gold); font-weight: 600; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 10px; display: block; }
-    .performer-bio { font-size: .82rem; color: var(--muted); line-height: 1.55; margin-bottom: 14px; }
+    .performer-bio { font-size: .82rem; color: var(--muted); line-height: 1.55; margin-bottom: 14px: padding:0 200px; }
     .performer-social { display: inline-block; font-size: .78rem; color: var(--gold); text-decoration: none; border: 1px solid rgba(201,150,58,.3); padding: 5px 14px; border-radius: 20px; transition: background .2s; }
     .performer-social:hover { background: rgba(201,150,58,.1); }
     .performers-loading { text-align: center; padding: 48px; color: var(--muted); font-size: .9rem; }
