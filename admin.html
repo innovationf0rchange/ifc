@@ -188,7 +188,7 @@
     <p>Sign in to manage your platform</p>
     <div class="field">
       <label>Email</label>
-      <input type="email" id="login-email" placeholder="admin@micofmithila.com" />
+      <input type="email" id="login-email" placeholder="admin@innovationf0rchange.com" />
     </div>
     <div class="field">
       <label>Password</label>
@@ -480,7 +480,7 @@
           <h3>🔐 Change Admin Password</h3>
           <p style="color:var(--muted);font-size:.85rem;margin-bottom:16px;">Update the credentials used to log into this admin panel.</p>
           <div class="form-grid">
-            <div class="field"><label>New Email</label><input type="email" id="new-email" placeholder="admin@micofmithila.com"/></div>
+            <div class="field"><label>New Email</label><input type="email" id="new-email" placeholder="admin@innovationf0rchange.com"/></div>
             <div class="field"><label>New Password</label><input type="password" id="new-pass" placeholder="Min 8 characters"/></div>
           </div>
           <br/><button class="btn-add" onclick="changeCredentials()">Update Credentials</button>
@@ -512,7 +512,7 @@
   // ─────────────────────────────────────
   //  CREDENTIALS (stored locally only)
   // ─────────────────────────────────────
-  const getEmail = () => localStorage.getItem('mic_admin_email') || 'admin@micofmithila.com';
+  const getEmail = () => localStorage.getItem('mic_admin_email') || 'admin@innovationf0rchange.com';
   const getPass  = () => localStorage.getItem('mic_admin_pass')  || 'MIC@2024';
 
   // ─────────────────────────────────────
@@ -784,7 +784,7 @@
       const formData = new FormData();
       formData.append('file', file);
       formData.append('upload_preset', CLOUDINARY_PRESET);
-      formData.append('folder', 'micofmithila/people');
+      formData.append('folder', 'innovationf0rchange/people');
 
       const xhr = new XMLHttpRequest();
       xhr.open('POST', `https://api.cloudinary.com/v1_1/${CLOUDINARY_CLOUD}/image/upload`);
